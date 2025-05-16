@@ -57,3 +57,15 @@ As illustrated, the data is sent **once** by the Publisher and is successfully *
 
 This demonstrates a successful communication flow using **AMQP** via RabbitMQ.
 
+## Monitoring chart based on publisher
+![](images/4.png)
+
+In the image above, the **Publisher** was executed multiple times to significantly increase the **message rate**.
+
+### Key Observations:
+
+- The **more frequently** the Publisher sends data to the **message broker**, the **higher the message rate** becomes.
+- A **high message rate** indicates that the message broker is receiving a **large volume of data** from the Publisher.
+- This behavior results in the **pattern shown in the chart**, reflecting the increased activity.
+
+This demonstrates how message throughput is affected by the frequency of data publishing.
