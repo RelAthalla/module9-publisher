@@ -37,3 +37,23 @@ This setup allows them to **exchange messages** through the same message broker.
 
 ## Running RabbitMQ as message broker
 ![](images/1.png)
+
+## Sending and Processing Event
+![](images/2.png)
+![](images/3.png)
+
+When RabbitMQ (the message broker) is running and we run both the Publisher and Subscriber programs using cargo run, the Publisher sends data to the message broker, and the Subscriber receives it. As shown in the illustration, the Publisher transmits the data once to the broker, and the Subscriber successfully receives that data.
+
+## Message Flow Between Publisher and Subscriber
+
+When the **RabbitMQ message broker** is running, and both the **Publisher** and **Subscriber** programs are executed using:
+
+The following process occurs:
+
+- The **Publisher** sends data to the RabbitMQ message broker.
+- The **Subscriber** receives the data from the message broker.
+
+As illustrated, the data is sent **once** by the Publisher and is successfully **received by the Subscriber** through the broker.
+
+This demonstrates a successful communication flow using **AMQP** via RabbitMQ.
+
