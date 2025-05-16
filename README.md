@@ -34,3 +34,6 @@ Specifies the following:
 Both the **publisher** and **subscriber** are connecting to the **same RabbitMQ server instance**, running on the **same machine**, with the **same credentials** and **port**.
 
 This setup allows them to **exchange messages** through the same message broker.
+
+## Running RabbitMQ as message broker
+![](images/1.png)
